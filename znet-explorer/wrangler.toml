@@ -1,4 +1,10 @@
 [build]
-command = "npm run build"
+command = "npm install && npm run build"
 [build.environment]
-NODE_VERSION = "20.0.0"
+NODE_VERSION = "20.11.0"
+
+[build.processing]
+skip_source_maps = true
+
+[pages_build_output_dir]
+value = "out"
