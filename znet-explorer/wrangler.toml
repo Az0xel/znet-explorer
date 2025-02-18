@@ -6,6 +6,7 @@ output_dir = "out"
 NODE_VERSION = "20.11.0"
 
 [pages]
+framework = "nextjs"
 pages_build_output_dir = "out"
 
 [build.processing]
