@@ -1,13 +1,13 @@
 [build]
-command = "yarn install --immutable && yarn build"
+command = "yarn install --check-cache && yarn build"
 
 [build.environment]
-NODE_VERSION = "20.11.0"
+NODE_VERSION = "20.x"
 YARN_ENABLE_IMMUTABLE_INSTALLS = "false"
 
 [pages]
 framework = "nextjs"
-pages_build_output_dir = ".next"  # Or "out" if using `next export`
+pages_build_output_dir = ".next"  # Use "out" if using `next export`
 
 [build.processing]
 skip_source_maps = true
